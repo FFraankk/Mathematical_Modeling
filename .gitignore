@@ -1,7 +1,7 @@
 Reference_Book/
 */*.aux
 */*.log
-*/*.pdf
+# */*.pdf
 */*.toc
 */*.out
 */*.gz
