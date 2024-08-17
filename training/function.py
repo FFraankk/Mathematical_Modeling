@@ -6,24 +6,21 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-
-
 save_path =r'D:\Mathematical_Modeling\training\pics'
 plt.rcParams['font.sans-serif'] = ['SimHei'] 
 plt.rcParams['axes.unicode_minus'] = False 
 
-# 创建文件夹
 
 if not os.path.exists(save_path):
     os.makedirs(save_path)
 
-# 有读秒
+# with Countdown
 def a1t0withCT(V0):
     a1=-0.045*(3.6*V0)**1.087
     t0=-1.926*math.log(3.6*V0)+8.703
     return a1,t0
 
-# 无读秒
+# without Countdown
 def a1t0withoutCT(V0):
     a1=-math.exp(2.340-52.329/(3.6*V0))
     t0=2.5*math.exp(-0.018*3.6*V0)  
@@ -32,11 +29,9 @@ def a1t0withoutCT(V0):
 CT=[0,1] # Countdown or not
 L=4 # lenth of cars
 H=30*3.14*7/24 # Intersection width
-NT2=0 # counter
-NT31=0 # counter
-NT32=0 # counter
+NT2=0;NT31=0;NT32=0 # counters
 S_arry=np.linspace(21,40,20) # Distance to the stop line
-V0_arry=np.linspace(15,22,8) # Initial velocity
+V0_arry=np.linspace(15,22,8) # Initial Velocity
 
 def T_time(V0,VF,a1,t0,S,L,H):
     # T1=(V0-(V0**2+2*a1*(S+L+H-V0*t0))**0.5)/(-a1)+t0
@@ -73,19 +68,13 @@ for CT in CT:
             
             char,T=T_time(V0,8.33,a1,t0,S,L,H)
 
-            # print(char,'=',T)
             if char=='T2':
                 NT2+=1
             if char=='T31':
                 NT31+=1
             if char=='T32':
                 NT32+=1
-            T_arry.append(T)
-            
-
-
-        # plt.figure(figsize=(10, 6))
-        
+            T_arry.append(T)        
 
         if CT==1:
             print('1')
@@ -94,7 +83,7 @@ for CT in CT:
             plt.plot(V0_arry, T_arry, label=f'S = {S}')
             if n==5:
                 
-                plt.title(f'不同V0下的时间曲线 (S = {S}),有读秒')
+                plt.title(f'有读秒情况下，不同S下的黄灯时间曲线 (S ={S-5}-{S})')
                 plt.legend()
                 plt.grid(True)
                 # plt.show()
@@ -107,8 +96,8 @@ for CT in CT:
             plt.ylabel('T (s)')
             plt.plot(V0_arry, T_arry, label=f'S = {S}')
             if n==5:
-                
-                plt.title(f'不同V0下的时间曲线 (S = {S}),无读秒')
+            
+                plt.title(f'无读秒情况下，不同S下的黄灯时间曲线 (S ={S-5}-{S})')            
                 plt.legend()
                 plt.grid(True)
                 # plt.show()
@@ -147,8 +136,7 @@ for CT in CT:
             plt.ylabel('T (s)')
             plt.plot(S_arry, T_arry, label=f'V = {V0}')
             if n==4:
-                
-                plt.title(f'不同S下的时间曲线 (V0 = {V0}),有读秒')
+                plt.title(f'有读秒情况下，不同V0下的黄灯时间曲线 (V0 ={V0-4}-{V0})')
                 plt.legend()
                 plt.grid(True)
                 # plt.show()
@@ -161,8 +149,7 @@ for CT in CT:
             plt.ylabel('T (s)')
             plt.plot(S_arry, T_arry, label=f'S = {S}')
             if n==4:
-                
-                plt.title(f'不同S下的时间曲线 (V0 = {V0}),无读秒')
+                plt.title(f'有读秒情况下，不同V0下的黄灯时间曲线 (V0 ={V0-4}-{V0})')
                 plt.legend()
                 plt.grid(True)
                 # plt.show()
