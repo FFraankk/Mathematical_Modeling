@@ -1,0 +1,38 @@
+\contentsline {section}{\numberline {一、}问题重述}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}问题背景}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}问题要求}{4}{subsection.1.2}%
+\contentsline {section}{\numberline {二、}问题分析}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}数据预处理}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}问题一的分析}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}问题二的分析}{5}{subsection.2.3}%
+\contentsline {section}{\numberline {三、}模型假设}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}基本假设}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}模型一假设}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}模型二假设}{6}{subsection.3.3}%
+\contentsline {section}{\numberline {四、}符号说明}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}问题一符号说明}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}问题二补充符号说明}{6}{subsection.4.2}%
+\contentsline {section}{\numberline {五、}模型的建立与问题的求解}{8}{section.5}%
+\contentsline {subsection}{\numberline {5.1}模型一的建立}{8}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}问题一的求解}{8}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}模型二的建立}{10}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}问题二的求解}{11}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}模型三的建立}{12}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}问题三的求解}{12}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}问题四的求解}{12}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}龙格库塔法简介}{12}{subsection.5.8}%
+\contentsline {section}{\numberline {六、}模型的评价，改进与推广}{12}{section.6}%
+\contentsline {subsection}{\numberline {6.1}模型的评价}{12}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}优点}{12}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}缺点}{12}{subsubsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.2}模型的改进与推广}{13}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}受众对象}{13}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}$\lambda $影响因素探究}{13}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}$\mu $影响因素探究}{14}{subsubsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.3}探究出现辟谣情况时曲线的变化}{15}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}附加假设}{15}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}探究突发辟谣状况出现时间$t_1$对曲线变化的影响}{16}{subsubsection.6.3.2}%
+\contentsline {section}{\numberline {七、}模型的检验}{16}{section.7}%
+\contentsline {subsection}{\numberline {7.1}模型的改进与推广}{17}{subsection.7.1}%
+\contentsline {section}{参考文献}{17}{section*.7}%
+\contentsfinish 

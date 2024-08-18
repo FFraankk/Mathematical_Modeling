@@ -81,7 +81,7 @@ def bianli(CT,S_arry,V0_arry):
                     a1,t0=a1t0withCT(V0)
                 else:
                     a1,t0=a1t0withoutCT(V0)
-                T,t=T_time(V0,8.33,a1,t0,S,L,Hwan)
+                T,t=T_time(V0,8.33,a1,t0,S,L,Hzhi)
                 T_final.append(T)
                 t_final.append(t)
                 T_arry.append(T)
@@ -97,7 +97,7 @@ def bianli(CT,S_arry,V0_arry):
                     plt.legend()
                     plt.grid(True)
                     # plt.show()
-                    plt.savefig(f'{save_path}/Time_Curve_S_WCT_Turn{S:.2f}.jpg')
+                    plt.savefig(f'{save_path}/Time_Curve_S_WCT_STR{S:.2f}.jpg')
                     plt.close() 
                     n=0
             if CT1==0:
@@ -110,7 +110,7 @@ def bianli(CT,S_arry,V0_arry):
                     plt.legend()
                     plt.grid(True)
                     # plt.show()
-                    plt.savefig(f'{save_path}/Time_Curve_S_WOCT_Turn{S:.2f}.jpg')
+                    plt.savefig(f'{save_path}/Time_Curve_S_WOCT_STR{S:.2f}.jpg')
                     plt.close() 
                     n=0
         for V0 in V0_arry:
@@ -122,7 +122,7 @@ def bianli(CT,S_arry,V0_arry):
                 else:
                     a1,t0=a1t0withoutCT(V0)
                 
-                T,t=T_time(V0,8.33,a1,t0,S,L,Hwan)
+                T,t=T_time(V0,8.33,a1,t0,S,L,Hzhi)
                 T_final.append(T)
                 t_final.append(t)
                 T_arry.append(T)
@@ -138,20 +138,20 @@ def bianli(CT,S_arry,V0_arry):
                     plt.legend()
                     plt.grid(True)
                     # plt.show()
-                    plt.savefig(f'{save_path}/Time_Curve_V0_WCT_Turn{V0}.jpg')
+                    plt.savefig(f'{save_path}/Time_Curve_V0_WCT_STR{V0}.jpg')
                     plt.close() 
                     n=0
             if CT1==0:
                 # print('1')
                 plt.xlabel('S(m)')
                 plt.ylabel('T (s)')
-                plt.plot(S_arry, T_arry, label=f'S = {V0}')
+                plt.plot(S_arry, T_arry, label=f'V = {V0}')
                 if n==4:
                     plt.title(f'直行且无读秒情况下，不同V0下的黄灯时间曲线 (V0 ={V0-3}-{V0})')
                     plt.legend()
                     plt.grid(True)
                     # plt.show()
-                    plt.savefig(f'{save_path}/Time_Curve_V0_WOCT_Turn{V0}.jpg')
+                    plt.savefig(f'{save_path}/Time_Curve_V0_WOCT_STR{V0}.jpg')
                     plt.close() 
                     n=0
 
@@ -183,7 +183,7 @@ def bianli(CT,S_arry,V0_arry):
                     plt.legend()
                     plt.grid(True)
                     # plt.show()
-                    plt.savefig(f'{save_path}/Time_Curve_S_WCT_Turn{S:.2f}.jpg')
+                    plt.savefig(f'{save_path}/Time_Curve_S_WCT_STR{S:.2f}.jpg')
                     plt.close() 
                     n=0
             if CT1==0:
@@ -196,7 +196,7 @@ def bianli(CT,S_arry,V0_arry):
                     plt.legend()
                     plt.grid(True)
                     # plt.show()
-                    plt.savefig(f'{save_path}/Time_Curve_S_WOCT_Turn{S:.2f}.jpg')
+                    plt.savefig(f'{save_path}/Time_Curve_S_WOCT_STR{S:.2f}.jpg')
                     plt.close() 
                     n=0
         for V0 in V0_arry:
@@ -224,7 +224,7 @@ def bianli(CT,S_arry,V0_arry):
                     plt.legend()
                     plt.grid(True)
                     # plt.show()
-                    plt.savefig(f'{save_path}/Time_Curve_V0_WCT_Turn{V0}.jpg')
+                    plt.savefig(f'{save_path}/Time_Curve_V0_WCT_STR{V0}.jpg')
                     plt.close() 
                     n=0
             if CT1==0:
@@ -237,7 +237,7 @@ def bianli(CT,S_arry,V0_arry):
                     plt.legend()
                     plt.grid(True)
                     # plt.show()
-                    plt.savefig(f'{save_path}/Time_Curve_V0_WOCT_Turn{V0}.jpg')
+                    plt.savefig(f'{save_path}/Time_Curve_V0_WOCT_{V0}.jpg')
                     plt.close() 
                     n=0
     return T_final,t_final
@@ -264,15 +264,3 @@ df = pd.DataFrame({'黄灯时长(s)': [3,4,5,6,7,8], '通过对侧停止线百�
 
 df.to_csv(path1,index=False)
 
-# t=3时，通过率是0.884375
-                                # T=3时，通过率是0.0
-# t=4时，通过率是1.0
-                                # T=4时，通过率是0.06875
-# t=5时，通过率是1.0
-                                # T=5时，通过率是0.4
-# t=6时，通过率是1.0
-                                # T=6时，通过率是0.80625
-# t=7时，通过率是1.0
-                                # T=7时，通过率是0.99375
-# t=8时，通过率是1.0
-                                # T=8时，通过率是1.0

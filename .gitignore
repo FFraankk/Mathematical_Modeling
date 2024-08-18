@@ -1,8 +1,3 @@
 Reference_Book/
-*/*.aux
-*/*.log
-# */*.pdf
-*/*.toc
-*/*.out
-*/*.gz
+
 Preparation/
