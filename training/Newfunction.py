@@ -179,7 +179,7 @@ def bianli(CT,S_arry,V0_arry):
                 plt.ylabel('T (s)')
                 plt.plot(V0_arry, T_arry, label=f'S = {S}')
                 if n==5:
-                    plt.title(f'直行且有读秒情况下，不同S下的黄灯时间曲线 (S ={S-4}-{S})')
+                    plt.title(f'转弯且有读秒情况下，不同S下的黄灯时间曲线 (S ={S-4}-{S})')
                     plt.legend()
                     plt.grid(True)
                     # plt.show()
@@ -192,7 +192,7 @@ def bianli(CT,S_arry,V0_arry):
                 plt.ylabel('T (s)')
                 plt.plot(V0_arry, T_arry, label=f'S = {S}')
                 if n==5:
-                    plt.title(f'直行且无读秒情况下，不同S下的黄灯时间曲线 (S ={S-4}-{S})')            
+                    plt.title(f'转弯且无读秒情况下，不同S下的黄灯时间曲线 (S ={S-4}-{S})')            
                     plt.legend()
                     plt.grid(True)
                     # plt.show()
@@ -220,7 +220,7 @@ def bianli(CT,S_arry,V0_arry):
                 plt.ylabel('T (s)')
                 plt.plot(S_arry, T_arry, label=f'V = {V0}')
                 if n==4:
-                    plt.title(f'直行且有读秒情况下，不同V0下的黄灯时间曲线 (V0 ={V0-3}-{V0})')
+                    plt.title(f'转弯且有读秒情况下，不同V0下的黄灯时间曲线 (V0 ={V0-3}-{V0})')
                     plt.legend()
                     plt.grid(True)
                     # plt.show()
@@ -233,7 +233,7 @@ def bianli(CT,S_arry,V0_arry):
                 plt.ylabel('T (s)')
                 plt.plot(S_arry, T_arry, label=f'S = {V0}')
                 if n==4:
-                    plt.title(f'直行且无读秒情况下，不同V0下的黄灯时间曲线 (V0 ={V0-3}-{V0})')
+                    plt.title(f'转弯且无读秒情况下，不同V0下的黄灯时间曲线 (V0 ={V0-3}-{V0})')
                     plt.legend()
                     plt.grid(True)
                     # plt.show()
