@@ -1,0 +1,34 @@
+
+table1_fit=[]
+
+
+for time in range(301):
+    
+    solutions_row=[]
+
+    theta_temp = mei_miao_long_tou_de_theta[time] 
+    
+    solutions_row.append(theta_temp)
+
+
+    result_head = root(eq_head, theta_temp, args=(theta_temp, L1)) 
+    solutions_row.append(result_head.x[0])
+    
+
+
+    for i in range(222):
+       
+        InI=solutions_row[i]-(L2/r_length(solutions_row[i]))
+        result_body = root(eq_others, InI, args=(solutions_row[i], L2))
+
+        solutions_row.append(result_body.x[0])
+    
+    t = np.linspace(0, 223, 224)
+    y = np.array(solutions_row)
+
+
+    coeff=np.polyfit(t,y,2)
+
+    funct = np.poly2d(coeff)
+
+    table1_fit.append(solutions_row)
